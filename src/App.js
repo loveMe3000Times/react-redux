@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { Divider } from 'antd';
+
+import './app.css'
+import Gender from './components/gender/Gender.jsx'
+import Num from './components/num/Num.jsx'
+import Username from './components/username/Username.jsx'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Gender></Gender>
+      <Divider></Divider>
+      <Username></Username>
+      <Divider></Divider>
+      <Num></Num>
     </div>
   );
 }
